@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart-quantity</title>
+    </head>
+    <body>
+        <p>Cart Quantity</p>
+        <button onclick="display();">Show Quantity</button>
+        <button onclick="
+            f(1);
+            ">Add to Cart</button>
+        <button onclick="
+            f(-1);
+            ">Remove from Cart</button>
+        <button onclick="
+            f(2);
+            ">+2</button>
+        <button onclick="
+            f(3)
+            ">+3</button>
+        <button onclick="
+            f(4);
+            ">+4</button>
+        <button onclick="
+            f(5);
+            ">+5</button>
+        <button onclick="
+            f(-2);
+            ">-2</button>
+        <button onclick="
+            f(-3);
+            ">-3</button>
+        <button onclick="
+            cnt=0;
+            console.log('Car was reset.');
+            document.querySelector('.result')
+            .innerHTML=`Cart was reset <br> Cart quantity: ${cnt}`;
+        ">Reset Cart</button>
+        <p class="result"></p>
+        <script>
+            let cnt=0;
+            function display(){
+                document.querySelector('.result')
+                .innerHTML=`Cart quantity: ${cnt}`;
+            }
+            function f(s){
+                if(cnt+s<0) {
+                    alert('Not enough items in the cart');
+                    return;
+                }
+                if(cnt+s>10) {
+                    alert('The cart is full');
+                    return;
+                }
+                cnt+=s;
+                display();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo List</title>
+        <link rel="stylesheet" href="styles/11-todo-list.css">
+    </head>
+    <body>
+        <p>ToDo List Practice 3</p>
+        <input class="add" placeholder="Todo name" onkeydown="
+            if(event.key=='Enter') addTodo();
+        ">
+        <input type="date" class="date" onkeydown="
+            if(event.key=='Enter') addTodo();
+        ">
+        <button onclick="
+            addTodo();
+        ">Add</button>
+        <div class="result"></div>
+        <script src="script/11-todo-list.js"></script>
+    </body>
+</html>

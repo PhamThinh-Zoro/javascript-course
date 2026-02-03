@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+            let ob1={
+                message: 'hello'
+            };
+            let ob2={
+                message: 'hello',
+                age: 10
+            };
+            let {message, age} = ob2;
+            let ob3={
+                message,
+                age,
+                fun(){
+                    console.log('day la function');
+                }
+            };
+            console.log(ob3);
+            ob3.fun();
+        </script>
+    </body>
+</html>

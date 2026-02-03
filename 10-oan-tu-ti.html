@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OAN TU TI</title>
+        <link rel="stylesheet" href="styles/10-oan-tu-ti.css">
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissors</p>
+        <button class="move-button" onclick="
+            playGame('rock');
+            ">
+            <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png"> 
+        </button>
+        
+        <button class="move-button" onclick="
+            playGame('paper');
+            ">
+            <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png">    
+        </button>
+        
+        <button class="move-button" onclick="
+            playGame('scissors');
+            ">
+            <img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png">    
+        </button>        
+        <p class="result"></p>
+        <p class="moves">
+        </p>
+        <p class="score"></p>
+        <button class="reset-score-button" onclick="
+            score.wins=score.losses=score.ties=0;
+            localStorage.removeItem('score');
+            updateScore();
+        ">Reset Score</button>
+        <script src="script/10-oan-tu-ti.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM Projects
+        </title>
+        <link rel="stylesheet" href="styles/dom.css">
+    </head>
+    <body>
+        <p>YouTube Subscribe Button</p>
+        <button class="subscribe" onclick="
+            change();
+        ">Subscribe</button>
+
+        <p>Amazon Shipping Calculator</p>
+        <p>Orders under $40 =+ $10 shipping</p>
+        <p>Orders over $40 = FREE shipping</p>
+        <input class="cost" placeholder="Cost of order"
+        onkeydown="
+            handleCostKeyDown(event);
+        ">
+        <button class="calculate" onclick="
+            caculate();
+        ">Calculate</button>
+        <p class="result"></p>
+        <p class="error"></p>
+        <script src="script/dom.js"></script>
+    </body>
+</html>

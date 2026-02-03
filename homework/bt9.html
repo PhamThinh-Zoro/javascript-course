@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BT9</title>
+    </head>
+    <body>
+        <input placeholder="Enter your name" onkeyup="
+            submit();
+            ">
+        <button onclick="
+            submit();
+        ">Caculate</button>
+        <p class="result"></p>
+        
+        <script>
+            function submit(){
+                let s=document.querySelector('input').value;
+                document.querySelector('.result').innerHTML=s;
+            }
+        </script>
+    </body>
+</html>
